@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - TravelDream</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            TravelDream
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tours.html">Направления</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <div class="grid">
+            <div class="card" style="padding: 30px;">
+                <h3>Наши контакты</h3>
+                <p><strong>Адрес:</strong> г. Москва, ул. Туристическая, д. 15</p>
+                <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+                <p><strong>Email:</strong> info@traveldream.ru</p>
+                <p><strong>Режим работы:</strong> Пн-Пт 9:00 - 20:00, Сб 10:00 - 18:00</p>
+            </div>
+
+            <div class="card" style="padding: 30px;">
+                <h3>Оставить заявку</h3>
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" required placeholder="Иван Иванов">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" required placeholder="+7 (999) 000-00-00">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" rows="4" placeholder="Куда хотите поехать?"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Отправить</button>
+                </form>
+                <p id="formMessage" style="margin-top: 15px; color: green; display: none;">Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>TravelDream</h4>
+                <p>Туристическое агентство полного цикла.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <a href="index.html">Главная</a>
+                <a href="tours.html">Направления</a>
+                <a href="services.html">Услуги</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>+7 (999) 123-45-67</p>
+                <p>info@traveldream.ru</p>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 TravelDream.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

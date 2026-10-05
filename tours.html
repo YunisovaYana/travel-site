@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Направления - TravelDream</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            TravelDream
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tours.html">Направления</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Наши направления</h2>
+
+        <div style="text-align: right; margin-bottom: 25px;">
+            <label for="sortPrice" style="margin-right: 10px;">Сортировать по цене:</label>
+            <select id="sortPrice" style="padding: 8px 15px; border-radius: 8px; border: 1px solid #ccc;">
+                <option value="asc">Сначала дешевые</option>
+                <option value="desc">Сначала дорогие</option>
+            </select>
+        </div>
+
+        <div class="grid" id="toursGrid">
+            <div class="card" data-price="45000">
+                <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Турция">
+                <div class="card-content">
+                    <h3>Турция</h3>
+                    <p>Анталия, Кемер, Стамбул. Все включено, море и солнце.</p>
+                    <span class="price">от 45 000 ₽</span>
+                    <a href="turkey.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="card" data-price="50000">
+                <img src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Египет">
+                <div class="card-content">
+                    <h3>Египет</h3>
+                    <p>Хургада, Шарм-эль-Шейх. Красное море и древние пирамиды.</p>
+                    <span class="price">от 50 000 ₽</span>
+                    <a href="egypt.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="card" data-price="120000">
+                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Мальдивы">
+                <div class="card-content">
+                    <h3>Мальдивы</h3>
+                    <p>Райские острова, белоснежные пляжи, бирюзовая вода.</p>
+                    <span class="price">от 120 000 ₽</span>
+                    <a href="maldives.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+            <div class="card" data-price="80000">
+                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Европа">
+                <div class="card-content">
+                    <h3>Европа</h3>
+                    <p>Италия, Испания, Франция. Экскурсии и культура.</p>
+                    <span class="price">от 80 000 ₽</span>
+                    <a href="europe.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>TravelDream</h4>
+                <p>Туристическое агентство полного цикла. Работаем с 2010 года.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <a href="index.html">Главная</a>
+                <a href="tours.html">Направления</a>
+                <a href="services.html">Услуги</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>г. Москва, ул. Туристическая, д. 15</p>
+                <p>+7 (999) 123-45-67</p>
+                <p>info@traveldream.ru</p>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 TravelDream. Все права защищены.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
